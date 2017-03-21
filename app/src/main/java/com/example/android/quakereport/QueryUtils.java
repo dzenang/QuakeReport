@@ -42,13 +42,6 @@ public final class QueryUtils {
 
         Log.i(LOG_TAG, "fetchEarthquakeData");
 
-        // TODO: 10.3.2017 delete this sleep when testing done
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         URL urlObject = createUrl(requestUrl);
 
         String jsonResponse = null;
